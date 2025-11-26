@@ -1,0 +1,203 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #5f1b85;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: #f7fafc;
+    color: #5f1b85;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* NAVIGATION */
+nav {
+    background-color:#cfb50e;
+    color:#f7fafc;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    border-bottom: 2px dashed #f7fafc;
+    position: relative;
+    z-index: 10;
+}
+
+nav ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul.menu > li {
+    position: relative;
+}
+
+nav ul.menu > li > a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul.menu > li > a:hover {
+    background: #5f1b85;
+}
+
+nav ul.submenu {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #5f1b85;
+    padding: 0;
+    display: none;
+    min-width: 180px;
+    z-index: 20;
+}
+
+nav ul.submenu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav ul.submenu li a:hover {
+    background: #ffdd57;
+    color: black;
+}
+
+nav ul.menu li:hover .submenu {
+    display: block;
+}
+
+
+
+/* MAIN CONTENT */
+section {
+    padding: 30px;
+}
+
+
+/* Vision Table */
+table {
+    width: 100%;
+    border: 1px solid black;
+    background: #faf7f9;   
+    color: black;
+    font-family: "Times New Roman", serif;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+table td {
+    padding: 20px;
+}
+
+table h2 {
+    color: black;
+    font-family: "Times New Roman", serif;
+    margin-top: 0;
+}
+
+table p {
+    color: black;
+    font-family: "Times New Roman", serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #cfb50e;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+
+/* ============================
+   IMAGE + TEXT OVERLAY SECTION
+   ============================ */
+
+.banner-container {
+    position: relative;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 80%;           
+    left: 50%;          
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5); 
+    padding: 5px 5px;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.history-content img {
+    display: block;
+    margin: 20px auto;   /* centers the image horizontally */
+    width: 50%;          /* optional: resize image (change as you like) */
+}
+
+.program-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ecd7f7;
+}
+
+.program-table td {
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+
+.prog-btn {
+    display: inline-block;
+    width: 250px;
+    background: #5f1b85;       /* purple button color */
+    color: white;
+    padding: 25px 30px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    transition: 0.3s;
+}
+
+.prog-btn:hover {
+    background: #cfb50e;       /* gold hover color */
+    color: black;
+    transform: scale(1.05);    /* small zoom effect */
+}
